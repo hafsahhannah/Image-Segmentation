@@ -41,44 +41,47 @@ drug testing and reduce the time for new drugs to become available to the public
 
 * You can run on colab or Python
 * Data can be obtained from
-https://data.mendeley.com/datasets/5y9wdsg2zt/2
+https://www.kaggle.com/competitions/data-science-bowl-2018/overview
 
 
 ## Info
 
-### I'm using transfer learning and the concept of classification layer to classify these images and managed to get an average accuracy of 98%. 
+### I'm using image segmentation concept and managed to get an average accuracy of 92%. 
 
 ### Data loading
 
 <h3><center>
-  <img src="" />
+  <img src="https://github.com/hafsahhannah/Image-Segmentation/blob/3c8b7043d305d367e47158a16e85575ad63fdd2b/Snapshots/image_loading.PNG" />
 </h3></center>
 
 ### Data inspection 
 
 <h3><center>
-  <img src="https://github.com/hafsahhannah/Image-Classification/blob/1ccee85bbccdc56cf4fdf30663e8c87ac4076691/Snapshots/data_inspection.png" />
+  <img src="https://github.com/hafsahhannah/Image-Segmentation/blob/3c8b7043d305d367e47158a16e85575ad63fdd2b/Snapshots/predicted_mask.PNG" />
 </h3></center>
 
 ### Tensorboard 
 
 <h3><center>
-  <img src="https://github.com/hafsahhannah/Image-Classification/blob/1ccee85bbccdc56cf4fdf30663e8c87ac4076691/Snapshots/tb_accuracy.PNG" />
+  <img src="https://github.com/hafsahhannah/Image-Segmentation/blob/3c8b7043d305d367e47158a16e85575ad63fdd2b/Snapshots/tensorboard.PNG" />
 </h3></center>
 
 ### Plot model
 
 <h3><center>
-  <img src="https://github.com/hafsahhannah/Image-Classification/blob/1ccee85bbccdc56cf4fdf30663e8c87ac4076691/Snapshots/model_summary.PNG" />
+  <img src="Snapshots/model.png" />
 </h3></center>
 
 ### Model analysis
 
 <h3><center>
-  <img src="https://github.com/hafsahhannah/Image-Classification/blob/ff6c77e9cc3154b52cbc5fd4e00f86fab640f0fb/Snapshots/classification_report.PNG" />
+  <img src="https://github.com/hafsahhannah/Image-Segmentation/blob/e20bec0cfb458e50062849f34cbebf77a0f9eff6/Snapshots/model_analysis.PNG" />
 </h3></center>
 
-
+### Results
+<h3><center>
+  <img src="https://github.com/hafsahhannah/Image-Segmentation/blob/e20bec0cfb458e50062849f34cbebf77a0f9eff6/Snapshots/predicted_mask.PNG" />
+</h3></center>
 ## Authors
 
 Contributors names and contact info
