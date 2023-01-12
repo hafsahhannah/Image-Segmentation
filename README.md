@@ -82,6 +82,7 @@ https://www.kaggle.com/competitions/data-science-bowl-2018/overview
 <h3><center>
   <img src="https://github.com/hafsahhannah/Image-Segmentation/blob/e20bec0cfb458e50062849f34cbebf77a0f9eff6/Snapshots/predicted_mask.PNG" />
 </h3></center>
+
 ## Authors
 
 Contributors names and contact info
