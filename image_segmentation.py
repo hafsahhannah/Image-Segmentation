@@ -80,10 +80,6 @@ test_masks_exp = np.expand_dims(test_masks_np,axis=-1)
 
 train_inputs_norm = train_inputs_np / 255.0
 test_inputs_norm = test_inputs_np / 255.0
-'''
-train_masks_norm = (train_masks_exp > 128) * 1
-test_masks_norm = (test_masks_exp > 128) * 1
-'''
 
 converted_masks_train = np.round(train_masks_exp /255.0).astype(np.int64)
 converted_masks_test = np.round(test_masks_exp /255.0).astype(np.int64)
@@ -100,25 +96,15 @@ sample = converted_inputs_train[0]
 sample = converted_inputs_test[0]
 
 # Convert numpy array to tensor
-'''
-train_inputs_tensor = tf.data.Dataset.from_tensor_slices(X_train)
-train_masks_tensor = tf.data.Dataset.from_tensor_slices(y_train)
-validation_inputs_tensor = tf.data.Dataset.from_tensor_slices(X_val)
-validation_masks_tensor = tf.data.Dataset.from_tensor_slices(y_val)
-test_inputs_tensor = tf.data.Dataset.from_tensor_slices(test_inputs_norm)
-test_masks_tensor = tf.data.Dataset.from_tensor_slices(test_masks_norm)
-'''
+
+
 X_train_tensor = tf.data.Dataset.from_tensor_slices(converted_inputs_train)
 X_test_tensor = tf.data.Dataset.from_tensor_slices(converted_inputs_test)
 y_train_tensor = tf.data.Dataset.from_tensor_slices(converted_masks_train)
 y_test_tensor = tf.data.Dataset.from_tensor_slices(converted_masks_test)
 
 # Combine features and labels together to form a zip dataset
-'''
-train_dataset = tf.data.Dataset.zip((train_inputs_tensor, train_masks_tensor))
-val = tf.data.Dataset.zip((validation_inputs_tensor, validation_masks_tensor))
-test_dataset = tf.data.Dataset.zip((test_inputs_tensor, test_masks_tensor))
-'''
+
 train_dataset = tf.data.Dataset.zip((X_train_tensor,y_train_tensor))
 test_dataset = tf.data.Dataset.zip((X_test_tensor,y_test_tensor))
 
